@@ -1,0 +1,97 @@
+// Importing modules
+@import 'bootstrap';
+@import 'fontawesome-all';
+
+// Updating variables
+$primary: #3292a6;
+$primary-overlay: rgba(50, 146, 166, 0.8);
+$blue: #3292a6;
+
+// GENERAL RULES
+body {
+  padding-top: 105px;
+}
+
+// Navbar
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  opacity: .9;
+  background-color: #fff;
+
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+  }
+}
+
+// Showcase
+#showcase {
+  background-image: url(../../images/mountains.jpg);
+  min-height: 600px;
+
+  .primary-overlay {
+    top: 0;
+    left: 0;
+    background-color: $primary-overlay;
+  }
+}
+
+// Authors
+#authors {
+  img {
+    margin-top: -60px;
+  }
+
+  .fab {
+    font-size: 1.5em;
+  }
+
+  .card {
+    transition: all .3s ease-in-out .1s;
+  }
+
+  .card:hover {
+    background: $primary;
+    color: white;
+
+    & h5, & .fab {
+      color: white !important;
+    }
+  }
+}
+
+// Showcase media queries
+@media (max-width: 768px) {
+  #showcase {
+    // min-height: 500px;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    .btn-outline-secondary {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+
+  #authors {
+
+    & .col-md-6, & .col-lg-3 {
+      margin: 2rem 0;
+    }
+
+    & .col-md-6:last-child, & .col-lg-3:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  #contact {
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}
