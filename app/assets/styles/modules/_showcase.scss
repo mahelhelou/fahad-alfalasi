@@ -1,0 +1,19 @@
+.showcase {
+  background-image: url(../images/author.jpg);
+
+  .primary-overlay {
+    top: 0;
+    left: 0;
+    // background-color: $primary-overlay;
+    background-color: rgba(0, 0, 0, .75);
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 75%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+$primary-overlay: rgba(50, 146, 166, 0.8);
+$blue: #3292a6;
+
+$teal: #1abc9c !default;
+$dark-blue: #2c3e50 !default;
+
+$primary: rgba(0, 0, 0, .85) !default;
+$secondary: $dark-blue !default;
+
+
+// Override Bootstrap border variables
+$border-width: 0.125rem !default;
+$border-radius: 0.5rem !default;
+$border-radius-lg: 0.75rem !default;
+$border-radius-sm: 0.25rem !default;
+
+// Override Bootstrap input/button variables
+$input-btn-border-width: $border-width !default;
+
+// Override Bootstrap modal variables
+$modal-inner-padding: 4rem 1rem !default;
+$modal-content-border-width: 0 !default;

@@ -1,0 +1,58 @@
+*::selection {
+  background: rgba(164, 129, 17, .75);
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'Greco Roman Lube Wrestling';
+  src: url('../fonts/GRECOromanLubedWrestling.ttf') format("truetype");
+}
+
+body {
+  font-family: 'Greco Roman Lube Wrestling';
+  font-size: 1.125rem;
+}
+
+// Sections
+section {
+  position: relative;
+
+  &::after {
+    @include responsive(atSmall) {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 15%;
+    }
+
+    display: block;
+    position: absolute;
+    content: '';
+    width: 6.25%;
+    height: .25rem;
+    left: 0;
+    bottom: 0;
+    background: rgba(164, 129, 17, 1.0);
+    opacity: .75;
+  }
+
+  .section-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+
+    @include responsive(atSmall) {
+      font-size: 2rem;
+    }
+  }
+}
+
+// Utilities
+.text-golden {
+  color: rgba(164, 129, 17, 1.0);
+}
+
+// Override default classes
+.btn-primary {
+  background: rgba(164, 129, 17, 1.0) !important;
+}
