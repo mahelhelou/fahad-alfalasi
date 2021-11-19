@@ -26,7 +26,7 @@
           <li class="nav-item"><a href="#quotes" class="nav-link">Quotes</a></li>
           <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
           <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#author" class="nav-link">Meet The Author</a></li>
         </ul>
       </div>
     </div>
@@ -40,10 +40,10 @@
           <div class="col-lg-6">
             <h1 class="display-4 mt-0 mt-md-5 pt-5 font-weight-bolder">Good Author & Wonderful Plot in</h1>
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, reiciendis.</p>
-            <a href="#" class="btn btn-outline-secondary btn-lg mt-3 text-white text-uppercase">
+            <!-- <a href="#" class="btn btn-outline-secondary btn-lg mt-3 text-white text-uppercase">
               <i class="fas fa-arrow-right"></i>
               Read More
-            </a>
+            </a> -->
           </div>
           <div class="col-lg-6 showcase__image">
             <img src="images/book.png" class="img-fluid d-none d-lg-block" alt="Book Image">
@@ -206,7 +206,7 @@
   <section class="newsletter py-5">
     <div class="container">
       <h2 class="section-title text-white">Get Our Updates!</h2>
-      <div class="row">
+      <div class="row mt-4">
         <div class="col-md-4">
           <input type="text" class="form-control form-control-lg mb-resp" placeholder="Enter Name..">
         </div>
@@ -224,16 +224,12 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="py-5 text-center bg-light">
+  <section id="about" class="about py-5 bg-light">
     <div class="container">
+      <h2 class="section-title">About This Book</h2>
       <div class="row">
-        <div class="col">
-          <div class="about__header mb-3 w-50 m-auto">
-            <h2 class="section-title">Why This Book?</h2>
-            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vero maiores quod
-              eligendi earum excepturi!</p>
-          </div>
-
+        <div class="col-md-6">
+          <h3 class="section-subtitle">Why This Book?</h3>
           <div id="accordion">
             <div class="card">
               <div class="card-header">
@@ -290,26 +286,30 @@
               </div>
             </div>
           </div>
+        </div><!-- dol-1-end -->
+        <div class="col-md-6">
+          <h3 class="section-subtitle">Our Tweets on <i class="fab fa-twitter"></i></h3>
+
         </div>
       </div>
     </div>
   </section>
 
 
-  <!-- CONTACT -->
-  <section id="contact" class="py-5 bg-light">
+  <!-- Meet the Author -->
+  <section id="author" class="author py-5 bg-light">
     <div class="container">
+      <h2 class="section-title">Meet The Author</h2>
       <div class="row">
         <div class="col-lg-6">
-          <h3 class="display-4">Get In Touch</h3>
-          <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ut, eligendi corrupti nisi
-            placeat praesentium.</p>
-
-          <div class="mt-4 w-25 d-none d-lg-block">
+          <div class="mb-4 w-25 mx-auto d-none d-lg-block">
             <img src="images/mlogo.png" alt="" class="img-fluid rounded-circle">
           </div>
+          <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ut, eligendi corrupti nisi
+            placeat praesentium.</p>
         </div>
         <div class="col-lg-6">
+          <h3 class="section-subtitle mb-4">Contact Me</h3>
           <form>
             <div class="input-group input-group-lg mb-3">
               <div class="input-group-prepend">
@@ -346,8 +346,8 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-primary text-center py-3">
-    <p class="font-weight-bold lead text-white">Copyright &copy; <span id="year"></span></p>
+  <footer class="bg-light text-center text-golden py-3">
+    <p class="font-weight-bold lead">Copyright &copy; <span id="year"></span></p>
   </footer>
 
   <!-- Modals -->

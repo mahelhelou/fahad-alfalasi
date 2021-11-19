@@ -18,43 +18,4 @@
 @import 'modules/screenshots';
 @import 'modules/divider';
 @import 'modules/newsletter';
-
-
-
-// Showcase media queries
-@media (max-width: 768px) {
-  #showcase {
-    // min-height: 500px;
-
-    h1 {
-      font-size: 4rem;
-    }
-
-    .btn-outline-secondary {
-      margin-bottom: 2rem;
-    }
-  }
-
-  .mb-resp {
-    margin-bottom: 1rem;
-  }
-
-  #authors {
-
-    & .col-md-6,
-    & .col-lg-3 {
-      margin: 2rem 0;
-    }
-
-    & .col-md-6:last-child,
-    & .col-lg-3:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  #contact {
-    p {
-      margin-bottom: 2rem;
-    }
-  }
-}
+@import 'modules/about';

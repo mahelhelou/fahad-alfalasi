@@ -1,0 +1,19 @@
+.about {
+  .card {
+    &-header {
+      h5 {
+        font-weight: bold;
+      }
+
+      .fas {
+        color: rgba(164, 129, 17, 1.0) !important;
+      }
+    }
+  }
+
+  .fa-twitter {
+    color: #1DA1F2;
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+  }
+}
