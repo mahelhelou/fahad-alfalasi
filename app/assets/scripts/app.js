@@ -16,7 +16,7 @@ jQuery(function ($) {
 	$('body').scrollspy({ target: '#main-menu' })
 
 	// Apply smooth scroll
-	$('#main-menu a').on('click', function (event) {
+	$('#main-menu a, .navbar-brand').on('click', function (event) {
 		if (this.hash !== '') {
 			event.preventDefault()
 
@@ -24,12 +24,9 @@ jQuery(function ($) {
 
 			$('html, body').animate(
 				{
-					scrollTop: $(hash).offset().top - 250 + 'px'
+					scrollTop: $(hash).offset().top - navbarHeight
 				},
-				800,
-				function () {
-					window.location.hash = hash
-				}
+				800
 			)
 		}
 	})
