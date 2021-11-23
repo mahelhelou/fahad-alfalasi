@@ -2,7 +2,7 @@
 
 function fahad_assets() {
   // Load styles
-  wp_enqueue_style( 'fahad-styles', get_template_directory_uri() . '/app/dist/style.css', NULL, '1.0' );
+  wp_enqueue_style( 'fahad-styles', get_template_directory_uri() . '/app/dist/styles.css', NULL, '1.0' );
 
   // Load scripts
   wp_enqueue_script( 'fahad-scripts', get_template_directory_uri() . '/app/dist/bundle.js', NULL, '1.0', true );

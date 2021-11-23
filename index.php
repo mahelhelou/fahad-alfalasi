@@ -5,6 +5,7 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <?php wp_head(); ?>
 </head>
 
 <body id="home">
@@ -12,7 +13,8 @@
   <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
     <div class="container">
       <a href="#home" class="navbar-brand">
-        <img src="images/logos/fahad-logo.png" height="50" alt="Fahad Al Falasi Logo">
+        <img src="<?php echo get_template_directory_uri() . '/app/images/logos/fahad-logo.png'; ?>" height="50"
+          alt="Fahad Al Falasi Logo">
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#main-menu">
         <span class="navbar-toggler-icon"></span>
@@ -76,7 +78,7 @@
             $stores->the_post(); ?>
 
         <div class="stores__item">
-          <a href="<?php get_field( 'book_link_in_the_store' ); ?>" target="_blank">
+          <a href="<?php echo get_field( 'book_link_in_the_store' )['url']; ?>" target="_blank">
             <div class="stores__item-logo">
               <img src="<?php echo get_field( 'store_image' ); ?>">
             </div>
@@ -312,7 +314,8 @@
         </div>
         <div class="col-lg-6">
           <div class="author__image mb-4 mx-auto">
-            <img src="images/author-image.png" alt="Fahad Al Falasi image" class="img-fluid">
+            <img src="<?php echo get_template_directory_uri() . '/app/images/author-image.png'; ?>"
+              alt="Fahad Al Falasi image" class="img-fluid">
           </div>
           <form>
             <div class="input-group input-group-lg mb-3">
@@ -352,6 +355,8 @@
   <footer class="bg-light text-center text-green py-3">
     <p class="font-weight-bold lead">Copyright &copy; 2022</p>
   </footer>
+
+  <?php wp_footer(); ?>
 </body>
 
 </html>
