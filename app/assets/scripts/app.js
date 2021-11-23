@@ -13,7 +13,7 @@ jQuery(function ($) {
 	$('#year').text(new Date().getFullYear())
 
 	// Init scrollspy
-	$('body').scrollspy({ target: '#main-menu' })
+	// $('body').scrollspy({ target: '#main-menu' })
 
 	// Apply smooth scroll
 	$('#main-menu a, .navbar-brand').on('click', function (event) {

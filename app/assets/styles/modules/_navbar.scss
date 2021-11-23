@@ -1,10 +1,14 @@
 .navbar {
   box-shadow: 2px 2px 5px $primary;
-  opacity: .9;
   background-color: #fff;
 
   .nav-item {
     font-size: 1.4rem;
     padding-right: 1.4rem;
+
+    .nav-link {
+      color: #718093 !important;
+      text-align: center;
+    }
   }
 }

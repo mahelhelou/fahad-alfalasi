@@ -6,7 +6,8 @@
       }
 
       .fas {
-        color: rgba(164, 129, 17, 1.0) !important;
+        // color: rgba(164, 129, 17, 1.0) !important;
+        color: #718093;
       }
     }
   }
@@ -15,5 +16,13 @@
     color: #1DA1F2;
     font-size: 1.75rem;
     margin-top: 0.5rem;
+  }
+
+  .twitter-feed {
+    @include responsive(atMedium) {
+      height: 800px;
+    }
+
+    overflow: hidden;
   }
 }

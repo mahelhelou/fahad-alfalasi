@@ -13,7 +13,7 @@
       top: 0;
       left: 0;
       opacity: 0;
-      background-color: fade-out($primary, .1);
+      background-color: fade-out(rgba(113, 128, 147, .8), .1);
       transition: opacity .5s ease-in;
 
       &:hover {
@@ -22,6 +22,7 @@
 
       &-content {
         font-size: 1.5rem;
+        color: rgba(251, 197, 49, 1.0);
       }
     }
   }
@@ -37,15 +38,15 @@
       }
     }
 
-    .close {
-      position: absolute;
-      z-index: 1;
-      right: 1.5rem;
-      top: 1rem;
-      font-size: 3rem;
-      line-height: 3rem;
-      color: $primary;
-      opacity: 1;
-    }
+    // .close {
+    //   position: absolute;
+    //   z-index: 1;
+    //   right: 1.5rem;
+    //   top: 1rem;
+    //   font-size: 3rem;
+    //   line-height: 3rem;
+    //   color: rgba(251, 197, 49, 1.0);
+    //   opacity: 1;
+    // }
   }
 }

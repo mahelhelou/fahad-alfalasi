@@ -1,3 +1,4 @@
 .newsletter {
-  background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url('../images/author.jpg') no-repeat center center/cover;
+  // background: linear-gradient(rgba(113, 128, 147, 1.0), rgba(113, 128, 147, 1.0)), url('../images/author.jpg') no-repeat center center/cover;
+  background: $primary-bg;
 }
