@@ -34,11 +34,11 @@
   </nav><!-- navbar-end -->
 
   <!-- Showcase -->
-  <section class="showcase position-relative">
-    <div class="primary-overlay position-absolute w-100 h-100 text-white">
+  <section class="showcase">
+    <div class="primary-overlay">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-5">
             <h1 class="display-3 mt-0 mt-md-5 pt-5 font-weight-bolder">The Hunt for Corona</h1>
             <p class="lead">To all victims of COVID-19, a virus that, alas, has achieved something many states have not:
               it has spread equality without regard to gender, color, or status.
@@ -48,7 +48,7 @@
               Read More
             </a> -->
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-7">
             <div class="showcase__image">
               <img src="<?php echo get_template_directory_uri() . '/app/images/book-cover-2.png'; ?>" class="img-fluid"
                 alt="Book Image">

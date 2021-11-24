@@ -10,7 +10,7 @@ jQuery(function ($) {
 	$('.showcase').height(windowHeight - navbarHeight)
 
 	// Get full year
-	$('#year').text(new Date().getFullYear())
+	// $('#year').text(new Date().getFullYear())
 
 	// Init scrollspy
 	// $('body').scrollspy({ target: '#main-menu' })
