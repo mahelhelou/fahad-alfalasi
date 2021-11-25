@@ -3,7 +3,7 @@ jQuery(function ($) {
 	let navbarHeight = $('.navbar').innerHeight()
 
 	// Dynamic body padding
-	$('body').css('paddingTop', navbarHeight)
+	// $('body').css('paddingTop', navbarHeight)
 
 	// Adjust showcase height (100vh)
 	let windowHeight = $(window).height()

@@ -34,7 +34,7 @@ function fahad_post_types() {
         'all_items'     => 'All Screenshot',
         'singular_name' => 'Screenshot'
       ],
-       'menu_icon' => 'dashicons-forms'
+       'menu_icon' => 'dashicons-format-image'
   ]);
 
   // Testimonial post type

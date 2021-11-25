@@ -10,10 +10,10 @@
 
 <body id="home">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light">
     <div class="container">
       <a href="#home" class="navbar-brand">
-        <img src="<?php echo get_template_directory_uri() . '/app/images/logos/fahad-logo.png'; ?>" height="50"
+        <img src="<?php echo get_template_directory_uri() . '/app/images/fahad-logo.png'; ?>" height="75"
           alt="Fahad Al Falasi Logo">
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#main-menu">
@@ -65,7 +65,7 @@
   <section id="stores" class="stores py-5 bg-light">
     <div class="container">
       <h2 class="section-title">Find Our Book On</h2>
-      <div class="owl-carousel">
+      <div class="owl-carousel mt-5">
         <?php
           $args = [
             'post_type'       => 'store',
@@ -181,7 +181,7 @@
             <?php the_content(); ?>
           </div>
           <div class="testimonials__item-name mt-4">
-            <h6 class="text-danger font-weight-bolder mb-1"><?php the_title(); ?></h6>
+            <h5 class="text-green font-weight-bolder mb-1"><?php the_title(); ?></h5>
           </div>
         </div>
         <?php }
@@ -195,20 +195,9 @@
   <section class="newsletter py-5">
     <div class="container">
       <h2 class="section-title text-white">Get Our Updates!</h2>
-      <div class="row mt-4">
-        <div class="col-md-4 mb-3 mb-md-0">
-          <input type="text" class="form-control form-control-lg mb-resp" placeholder="Your name...">
-        </div>
-        <div class="col-md-4 mb-3 mb-md-0">
-          <input type="email" class="form-control form-control-lg mb-resp" placeholder="Your email...">
-        </div>
-        <div class="col-md-4">
-          <button class="btn btn-lg btn-block btn-primary">
-            <i class="fas fa-envelope"></i>
-            Submit
-          </button>
-        </div>
-      </div>
+      <form method="POST" action="<?php the_permalink(); ?>">
+        <?php echo do_shortcode( '[contact-form-7 id="489" title="Email Subscriptions"]' ); ?>
+      </form>
     </div>
   </section><!-- newsletter-end -->
 
@@ -298,7 +287,6 @@
       <h2 class="section-title">Meet The Author</h2>
       <div class="row mt-5">
         <div class="col-lg-6 text-center text-md-left">
-          <h3 class="section-subtitle mb-4">Contact Me</h3>
           <p class="lead">Fahad Alfalasi grew up in Dubai, UAE, where its serene undulating creek converges the charm of
             the East with the progressive West.</p>
           <p class="lead">Fahad’s childhood passion for reading drove him to aim for the other end of the rainbow – the
@@ -313,44 +301,25 @@
           <p class="lead">The Hunt of Corona is Fahad’s first flash fiction collection.</p>
         </div>
         <div class="col-lg-6">
-          <div class="author__image mb-4 mx-auto">
-            <img src="<?php echo get_template_directory_uri() . '/app/images/author-image.png'; ?>"
-              alt="Fahad Al Falasi image" class="img-fluid">
+          <div class="author__image mx-auto">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri() . '/app/images/author-image.png'; ?>"
+              alt="Fahad Al Falasi image">
           </div>
-          <form>
-            <div class="input-group input-group-lg mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fas fa-user"></i>
-                </span>
-              </div>
-              <input type="text" class="form-control" placeholder="Name">
-            </div>
-
-            <div class="input-group input-group-lg mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
-              <input type="text" class="form-control" placeholder="Email">
-            </div>
-
-            <div class="input-group input-group-lg mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">
-                  <i class="fas fa-pencil-alt"></i>
-                </span>
-              </div>
-              <textarea class="form-control" placeholder="Message" rows="5"></textarea>
-            </div>
-
-            <input type="submit" value="Send Me A Message" class="btn btn-primary btn-block btn-lg">
-          </form>
         </div>
       </div>
     </div>
   </section><!-- meet-the-author-end -->
+
+  <!-- Contact Me -->
+  <section class="contact py-5">
+    <div class="container">
+      <form>
+        <div class="row">
+          <?php echo do_shortcode( '[contact-form-7 id="490" title="Contact Me Form"]' ); ?>
+        </div>
+      </form>
+    </div>
+  </section><!-- contact-me-end -->
 
   <footer class="bg-light text-center text-green py-3">
     <p class="font-weight-bold lead">Copyright &copy; 2022</p>
