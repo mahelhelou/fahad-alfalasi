@@ -1,6 +1,6 @@
 .showcase {
   position: relative;
-  background: url('../images/showcase-bg.jpeg') no-repeat center center;
+  background: url('../images/showcase-bg.jpeg') no-repeat bottom center/cover;
   background-attachment: fixed;
 
   @include responsive(atSmall) {
@@ -33,7 +33,7 @@
     // background-color: $primary-overlay;
     // background-color: rgba(0, 0, 0, .75);
     background: $primary-bg;
-    opacity: .9;
+    opacity: .875;
   }
 
   &__image {

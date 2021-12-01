@@ -195,7 +195,7 @@
   <section class="newsletter py-5">
     <div class="container">
       <h2 class="section-title text-white">Get Our Updates!</h2>
-      <form method="POST" action="<?php the_permalink(); ?>">
+      <form method="POST" action="<?php //the_permalink(); ?>">
         <?php echo do_shortcode( '[contact-form-7 id="489" title="Email Subscriptions"]' ); ?>
       </form>
     </div>
@@ -271,7 +271,7 @@
           <h3 class="section-subtitle text-center text-md-left">Read My Tweets on <i class="fab fa-twitter mt-4"></i>
           </h3>
           <div class="twitter-feed">
-            <a class="twitter-timeline" href="https://twitter.com/khalid_alrajhi?ref_src=twsrc%5Etfw">
+            <a class="twitter-timeline" href="https://twitter.com/aufahadalfalasi?ref_src=twsrc%5Etfw">
             </a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
@@ -313,9 +313,41 @@
   <!-- Contact Me -->
   <section class="contact py-5">
     <div class="container">
-      <form>
+      <form method="POST" action="<?php the_permalink(); ?>">
         <div class="row">
-          <?php echo do_shortcode( '[contact-form-7 id="490" title="Contact Me Form"]' ); ?>
+          <div class="col-md-6">
+            <h2 class="display-4 mb-4 d-none d-md-block">Contact Me</h2>
+            <h2 class="section-title d-block d-md-none">Contact Me</h2>
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+              <input type="text" name="contact-user-name" class="form-control" placeholder="Name">
+            </div>
+
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+              <input type="text" name="contact-user-email" class="form-control" placeholder="Email">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-pencil-alt"></i>
+                </span>
+              </div>
+              <textarea class="form-control" name="contact-user-message" placeholder="Message" rows="5"></textarea>
+            </div>
+
+            <input type="submit" value="Send Me A Message" class="btn btn-primary btn-lg">
+          </div>
         </div>
       </form>
     </div>

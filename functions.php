@@ -1,5 +1,9 @@
 <?php // Fahad Al Falasi Functions
 
+// Remove <p>s From Contact Vorm 7 (Keep HTML Structure)
+// add_filter( 'wpcf7_autop_or_not', '__return_false' );
+// define( 'WPCF7_AUTOP', false ); // wp-config.php
+
 function fahad_assets() {
   // Load styles
   wp_enqueue_style( 'fahad-styles', get_template_directory_uri() . '/app/dist/styles.css', NULL, '1.0' );
